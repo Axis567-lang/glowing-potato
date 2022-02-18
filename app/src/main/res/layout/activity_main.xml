@@ -7,12 +7,59 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tarea_view"
+        android:layout_width="0dp"
+        android:layout_height="468dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:text="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas &quot;Letraset&quot;, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. Nunc id dignissim lacus. Phasellus vel facilisis purus. Integer sapien libero, tempor ac aliquam et, lacinia sed odio. Pellentesque feugiat, tortor vitae scelerisque ultricies, ante elit sodales tortor, ut suscipit sapien justo eu felis. Ut tristique tincidunt lectus at tristique. Duis turpis dui, hendrerit non ornare et, hendrerit vitae lacus. Donec luctus libero dolor, sed placerat lectus tristique ac. Aliquam congue massa tincidunt aliquet commodo. Fusce nec varius ipsum, eu commodo magna. Aliquam facilisis dapibus ullamcorper. Quisque id metus quis enim fermentum scelerisque. Pellentesque aliquet fringilla erat ut pharetra. Sed nec porttitor risus.  Morbi porta blandit scelerisque. Morbi quis ultrices nulla. Morbi semper tempor sem, non dapibus dui eleifend eget. Vivamus diam lorem, volutpat ac ornare in, molestie sit amet ligula. Curabitur ac nisl sagittis, feugiat magna in, rutrum justo. Fusce convallis ornare massa in gravida. Duis diam lacus, varius at iaculis nec, condimentum a augue. Quisque in risus ut justo vehicula dapibus eget id eros. Aenean a condimentum nisl, non sodales massa. Nulla pretium diam a eros efficitur commodo. Sed faucibus enim eu felis euismod, pretium facilisis velit consectetur. Nunc feugiat eleifend dolor, eu gravida tellus viverra tristique. Etiam in consectetur libero.  Proin eget cursus dui, vel gravida metus. Sed cursus posuere sollicitudin. Nullam ac nunc a neque maximus aliquet ut quis lorem. Fusce convallis mattis mollis. Vivamus id consectetur libero. Proin enim nisl, congue sed consequat imperdiet, tempor non augue. Nunc bibendum molestie ex eu laoreet. Sed quis pellentesque quam. Phasellus risus ante, dapibus sed est vitae, lobortis lobortis sem. Donec a auctor dolor, sit amet aliquet ligula. Integer iaculis mollis metus, vel fringilla diam ornare vel.  Suspendisse ut rhoncus arcu, in convallis est. Aliquam erat volutpat. Pellentesque at arcu ullamcorper, elementum ipsum id, aliquam velit. Integer nunc justo, vestibulum a nulla sit amet, rhoncus ultrices purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eros felis, condimentum nec neque in, dapibus pretium risus. Nunc sagittis at lacus vel mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut condimentum gravida ex quis tempus. Duis tempus risus nec ornare faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis tincidunt feugiat. Aliquam tincidunt augue at augue luctus tempor. Integer feugiat lorem enim, vel placerat elit malesuada quis. Nullam porttitor lectus sed nibh venenatis tempus."
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarea_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.rss
+package com.example.clickmeapp
 
 import org.junit.Test
 
